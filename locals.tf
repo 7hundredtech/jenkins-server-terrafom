@@ -2,6 +2,7 @@ locals {
 
   default_vpc_name    = "defaultVPC"
   default_subnet_name = "defaultSubnet"
+  instance_type       = "t2.small"
 
   ec2_security_group_name    = "ec2SecurityGroup"
   ec2_security_group_desc    = "Allow access on Ports 22 and 8080"

@@ -1,5 +1,6 @@
 variable "ec2_security_group_name" {}
 variable "vpc_id" {}
+variable "instance_type" {}
 variable "ec2_security_group_desc" {}
 variable "ec2_security_group_tag_val" {}
 variable "ec2_security_group_http_proxy_desc" {}

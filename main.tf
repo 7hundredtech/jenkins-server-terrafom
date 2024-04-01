@@ -16,6 +16,7 @@ module "iam" {
 module "ec2" {
   source                     = "./modules/ec2"
   vpc_id                     = module.vpc.default_vpc_id
+  instance_type              = local.instance_type
   ec2_security_group_name    = local.ec2_security_group_name
   ec2_security_group_desc    = local.ec2_security_group_desc
   ec2_security_group_tag_val = local.ec2_security_group_tag_val
